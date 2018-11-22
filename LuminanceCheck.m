@@ -1,4 +1,4 @@
-%% Written by Laura Cabral and Rhodri Cusack, 2018
+%% Written by Laura Cabral 2018
 
 scriptpth=fileparts(mfilename('fullpath'));
 categories={'Faces','Houses'};
