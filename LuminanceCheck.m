@@ -8,14 +8,11 @@ for n = 1:2
     
     filelist = dir(fullfile(scriptpth,categories{n},'*jpg'));
     
+    % Arrays for output
+    totpix=nan(2,length(filelist));
+    lum=nan(2,length(filelist));
+    
     for i=1:length(filelist)
-        % Arrays for output
-        if i==1 && n==1
-            totpix=nan(2,length(filelist));
-            lum=nan(2,length(filelist));
-        end
-        
-        
         %read in the images
         im = imread(fullfile(scriptpth,categories{n},filelist(i).name));
     
