@@ -16,7 +16,7 @@ for n=1:2
        im=double(im)/255; 
                            
        %luminance
-       lum(n,i)=mean(im(:));
+       lum{n}(end+1)=mean(im(:)); 
         
     end
     
