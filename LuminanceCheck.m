@@ -16,12 +16,12 @@ for n=1:2
        im=double(im)/255; 
                            
        %luminance
-       lumtest(n,i)=mean(im(:));
+       lum(n,i)=mean(im(:));
         
     end
     
 end
 
-[h p]=ttest2(lumtest(1,:),lumtest(2,:));
+[h p]=ttest2((lum{1}),(lum{2}));
 fprintf('Faces vs. houses, lum p<%f\n',p);
         
